@@ -18,23 +18,7 @@ services:
       - key: DJANGO_SECRET_KEY
         generateValue: true
       - key: FRONTEND_URL
-        fromService:
-          type: static
-          name: quiz-frontend
-          property: url
-
-  # ── React Frontend (Static Site) ──────────────────────────
-  - type: static
-    name: quiz-frontend
-    rootDir: frontend-modified
-    buildCommand: npm install && npm run build
-    publishDir: dist
-    envVars:
-      - key: VITE_API_URL
-        fromService:
-          type: web
-          name: quiz-backend
-          property: url
+        value: https://your-frontend-url.vercel.app # Update this with your actual frontend URL
 
 # ── PostgreSQL Database ─────────────────────────────────────
 databases:
