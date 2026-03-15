@@ -5,7 +5,7 @@ services:
     runtime: python
     rootDir: backend-modified
     buildCommand: ./build.sh
-    startCommand: gunicorn quiz_backend.wsgi:application
+    startCommand: bash -c "source $HOME/.profile && gunicorn quiz_backend.wsgi:application"
     envVars:
       - key: DATABASE_URL
         fromDatabase:
@@ -19,12 +19,12 @@ services:
         generateValue: true
       - key: FRONTEND_URL
         fromService:
-          type: static_site
+          type: static
           name: quiz-frontend
           property: url
 
   # ── React Frontend (Static Site) ──────────────────────────
-  - type: static_site
+  - type: static
     name: quiz-frontend
     rootDir: frontend-modified
     buildCommand: npm install && npm run build
