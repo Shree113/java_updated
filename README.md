@@ -53,13 +53,28 @@ This project is structured for easy deployment using a "Manual" or "Blueprint" a
 ---
 
 ## 📂 Project Structure
-- `backend-modified/`: Django backend source.
-  - `build.sh`: Build script for Render (Installs OpenJDK 21).
-  - `Procfile`: Render/Heroku process file.
-- `frontend-modified/`: React frontend source.
-  - `src/config.js`: Dynamic API URL configuration.
-- `render.yaml`: Blueprint configuration for Render.
-- `docker-compose.yml`: Local development configuration.
+
+```text
+.
+├── backend-modified/          # Django Backend
+│   ├── quiz_api/              # Quiz logic (models, views, serializers)
+│   ├── quiz_backend/          # Project settings & URLs
+│   ├── build.sh               # Render build script (installs OpenJDK 21)
+│   ├── Procfile               # Deployment process file
+│   ├── requirements.txt       # Python dependencies
+│   └── questions_fixture.json # Seed data for quiz questions
+├── frontend-modified/         # React + Vite Frontend
+│   ├── src/
+│   │   ├── pages/             # Quiz, StudentEntry, Welcome, etc.
+│   │   ├── App.jsx            # Main routing
+│   │   └── config.js          # Dynamic API URL configuration
+│   ├── public/                # Static assets (logos, images)
+│   ├── index.html             # Main entry point
+│   └── vite.config.js         # Vite configuration
+├── render.yaml                # Render Blueprint configuration
+├── docker-compose.yml         # Local Docker development config
+└── README.md                  # Project documentation
+```
 
 ---
 
