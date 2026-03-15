@@ -1,0 +1,2 @@
+web: bash -c "source $HOME/.profile && gunicorn quiz_backend.wsgi:application --log-file -"
+release: python manage.py migrate && python manage.py loaddata questions_fixture.json --ignorenonexistent || true

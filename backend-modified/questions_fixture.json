@@ -1,0 +1,54 @@
+[
+  {
+    "model": "quiz_api.question",
+    "pk": 1,
+    "fields": {
+      "text": "hfbf3nfji3fui3fbnewerjfwnrf",
+      "option_a": "hyuvbehcbw",
+      "option_b": "ewjfcbewicb",
+      "option_c": "je3nfuiewbn3",
+      "option_d": "hieb3hbehe3",
+      "correct_option": "j",
+      "code_snippet": "frkjfjfncewjkcnwejnwejkdnwedjw"
+    }
+  },
+  {
+    "model": "quiz_api.question",
+    "pk": 2,
+    "fields": {
+      "text": "vrevervcecercfwcwecjkhrvhbrec",
+      "option_a": "e",
+      "option_b": "e",
+      "option_c": "d",
+      "option_d": "c",
+      "correct_option": "q",
+      "code_snippet": "echjewbcwhcbnw"
+    }
+  },
+  {
+    "model": "quiz_api.question",
+    "pk": 3,
+    "fields": {
+      "text": "hjfrcgwreycvewycbw",
+      "option_a": "e",
+      "option_b": "e",
+      "option_c": "d",
+      "option_d": "c",
+      "correct_option": "q",
+      "code_snippet": "chjsbxhdwsbxuw"
+    }
+  },
+  {
+    "model": "quiz_api.question",
+    "pk": 4,
+    "fields": {
+      "text": "cfewcewcxwccw",
+      "option_a": "hyuvbehcbw",
+      "option_b": "e",
+      "option_c": "ff",
+      "option_d": "qq",
+      "correct_option": "e",
+      "code_snippet": "ewd"
+    }
+  }
+]

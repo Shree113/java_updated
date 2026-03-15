@@ -1,0 +1,86 @@
+.thank-you-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6E9CBF, #6E9CBF);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header {
+    background-color: #fff;
+    padding: 1rem;
+  }
+  
+  .headerContent {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .logoGroup {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .logo, .instituteLogo {
+    height: 60px;
+    width: auto;
+  }
+  
+  .autonomousText {
+    font-size: 0.875rem;
+    color: #1e293b;
+  }
+  
+  .main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .thank-you-title {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    color: #fff;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  }
+  
+  .completion-message {
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+    color: #fff;
+    margin-bottom: 2rem;
+  }
+  
+  .message-box {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    max-width: 600px;
+    width: 90%;
+  }
+  
+  .message-box p {
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    color: #1e293b;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {
+    .headerContent {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .main-content {
+      padding: 1rem;
+    }
+  }
